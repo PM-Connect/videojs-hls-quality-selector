@@ -1,4 +1,5 @@
 import videojs from 'video.js';
+/* global window, CustomEvent */
 
 // Concrete classes
 const VideoJsMenuItemClass = videojs.getComponent('MenuItem');
