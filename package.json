@@ -1,13 +1,16 @@
 {
-  "name": "videojs-hls-quality-selector",
-  "version": "1.0.5",
+  "name": "@pm-connect/videojs-hls-quality-selector",
+  "version": "1.0.8",
   "description": "Adds a quality selector menu for HLS sources played in videojs.  Requires `videojs-contrib-hls` and videojs-contrib-quality-levels plugins.",
   "main": "dist/videojs-hls-quality-selector.cjs.js",
   "module": "dist/videojs-hls-quality-selector.es.js",
   "generator-videojs-plugin": {
     "version": "5.0.3"
   },
-  "repository": "https://github.com/chrisboustead/videojs-hls-quality-selector.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PM-Connect/videojs-hls-quality-selector"
+  },
   "scripts": {
     "prebuild": "npm run clean",
     "build": "npm-run-all -p build:*",
@@ -105,5 +108,12 @@
     "sinon": "^2.2.0",
     "uglify-js": "^3.0.7",
     "videojs-standard": "^6.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/PM-Connect/videojs-hls-quality-selector/issues"
+  },
+  "homepage": "https://github.com/PM-Connect/videojs-hls-quality-selector#readme",
+  "directories": {
+    "test": "test"
   }
 }
