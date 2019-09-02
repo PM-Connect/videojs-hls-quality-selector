@@ -31,8 +31,9 @@ export default class ConcreteMenuItem extends VideoJsMenuItemClass {
      * Click event for menu item.
      */
   handleClick() {
-
-        // Reset other menu items selected status.
+    var quality = this.item.value;
+    var event = new CustomEvent('videoQualityChanged', {detail: quality});
+    // Reset other menu items selected status.
     for (let i = 0; i < this.qualityButton.items.length; ++i) {
       this.qualityButton.items[i].selected(false);
     }
@@ -40,6 +41,7 @@ export default class ConcreteMenuItem extends VideoJsMenuItemClass {
         // Set this menu item to selected, and set quality.
     this.plugin.setQuality(this.item.value);
     this.selected(true);
+    window.dispatchEvent(event);
 
   }
 }

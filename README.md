@@ -86,7 +86,7 @@ require(['video.js', 'videojs-hls-quality-selector'], function(videojs) {
 
 ## License
 
-MIT. Copyright (c) Chris Boustead (chris@forgemotion.com)
+Credit to (c) Chris Boustead (chris@forgemotion.com)
 
 
 [videojs]: http://videojs.com/
