@@ -119,7 +119,7 @@ class HlsQualitySelectorPlugin {
     });
 
     levelItems.push(this.getQualityMenuItem.call(this, {
-      label: player.localize('Auto'),
+      label: player.localize('auto'),
       value: 'auto',
       selected: true
     }));
