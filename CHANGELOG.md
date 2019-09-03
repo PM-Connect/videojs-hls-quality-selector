@@ -1,4 +1,6 @@
 # Versions
+## 1.0.9 (2019-09-03)
+- Minor change to class name on title element
 ## 1.0.8 (2019-09-02)
 - Adjusted Package settings
 ## 1.0.7 (2019-09-02)
