@@ -56,7 +56,7 @@ export default class ConcreteButton extends VideoJsButtonClass {
         // Add a title list item to the top
     if (this.options_.title) {
       const titleEl = Dom.createEl('li', {
-        className: 'vjs-menu-title',
+        className: 'vjs-menu-title quality-title',
         innerHTML: toTitleCase(this.options_.title),
         tabIndex: -1
       });
