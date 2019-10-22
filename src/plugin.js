@@ -23,6 +23,7 @@ class HlsQualitySelectorPlugin {
    */
   constructor(player, options) {
     this.player = player;
+    this.title = options.title || this.player.localize('Quality');
 
     // If there is quality levels plugin and the HLS tech exists
     // then continue.
@@ -55,8 +56,9 @@ class HlsQualitySelectorPlugin {
   createQualityButton() {
 
     const player = this.player;
+    const title = this.title;
 
-    this._qualityButton = new ConcreteButton(player);
+    this._qualityButton = new ConcreteButton(player, title);
 
     const placementIndex = player.controlBar.children().length - 2;
     const concreteButtonInstance = player.controlBar.addChild(this._qualityButton,
